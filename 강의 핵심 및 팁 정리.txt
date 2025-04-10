@@ -47,3 +47,11 @@ Specificity(우선순위) - 더욱 구체적인 선택자에 적용된 규칙이
 
 CSS 박스 모델 - padding, border, margin 설정하기
 
+선택자 -
+Type = elementname / ID = #id / Group = elementname, elementname / Class = .class
+
+Combinators -
+Descendant(자손 결합자) = li p = All p with li as ancestor(부모가 아니라 조상)
+Child(자식 결합자) = h2 > p = Only p which are direct children of h2(직계 자식에만 적용)
+
+클래스 결합자가 자손 결합자 보다 더 구체적이라 우선순위가 더 높다.
