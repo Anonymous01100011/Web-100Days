@@ -1,0 +1,49 @@
+vscode 자동완성기능 켜기 - Ctrl + Space
+
+file -> Preferences -> Keyboard Shortcuts -> format document 검색하기(자동줄바꿈 단축키)
+
+자동줄바꿈 기능 확장기능 - Prettier - Code formatter 설치하고
+file -> Preferences -> Settings -> format 검색하기 -> Editor:Default Formatter 항목 Prettier로 변경해주기
+
+크롬 개발자 도구에서 요소 선택하기 - Ctrl + Shift + C
+
+fonts.google.com - 폰트 관련 구글 사이트
+
+링크 추가로 다운로드 받은 글꼴 사용시 font-family: 'Fira Sans'; 이런식으로 '' 작은 따옴표 안에 글꼴명 사용
+
+font-family: 'Fira Sans', sans-serif; 이런식으로 지정하면 fallback폰트로 처음 글꼴 불러오기 실패시 브라우저의 기본 글꼴 대신 자동으로 다음 글꼴 적용됨
+
+border-radius를 적용할때 가로, 세로 높이의 절반을 적용하면 정확하게 원형의 모습이 된다.
+
+text-align은 해당 요소의 컨텐츠를 정렬하는 속성이다. 즉, <p>안녕하세요</p> p태그 자체가 아니라 p태그 안의 컨텐츠가 정렬된다. 예를들어<img>태그의 이미지를 정렬하려고 text-align 속성을 사용한다면 <img>태그 자체에 사용하면 아무런 변화가 없지만 <body>태그에 적용하면 정렬이 될것이다.
+
+CSS파일에 순서는 상관이 없지만 HTML태그 순서로 나열하고, 유형선택자를 그룹별로 두면 보기 좋을 것이다.
+
+CSS 전체 선택자, 유형 선택자, (가상 선택자? 가상 클래스?/의사클래스,의사요소), 클래스 선택자, ID 선택자, 특성 선택자
+
+<!DOCTYPE html>
+<html lang="en"> - 언어 지정
+<head>
+    <meta charset="UTF-8"> - 이 화면에서 사용 중인 문자를 브라우저에 알리는 역할
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> - 반응형 웹사이트 디자인에 관한 설정
+    <title>My Upcoming Challenges</title> - 검색엔진 결과에 표시되는 타이틀을 설정(탭에 표시되는 타이틀도 설정)
+</head>
+<body>
+    
+</body>
+</html>
+
+file -> Preferences -> Keyboard Shortcuts -> comment 검색하기 -> Toggle Line Comment(주석 처리 단축키)
+
+CSS 로직을 제어하는 규칙의 세가지 핵심 용어
+Inheritance(상속) / Cascading Style Sheets(계단식 스타일 시트에 해당하는 계단식 상속) / Specificity(우선순위)
+
+Inheritance(상속) - 특정 컨테이너 규칙이 하위 항목에 적용된다는 걸 의미한다. 이때 특정이란 말이 중요한데 모든 규칙이 자동으로 자손에게 적용되는 게 아니기 때문이다. 예를 들어 부모 요소에 너비가 정의되어 있다고 해서 모든 자손의 너비가 이와 같은건 아니기 때문이다. 따라서 상식적으로 생각해보면 실제로 상속되는 규칙과 그렇지 않은 규칙을 이해하는데 큰 도움이 된다.
+
+Cascading Style Sheets(계단식 스타일 시트에 해당하는 계단식 상속) - 하나의 요소에 여러 규칙을 적용할 수 있다는 걸 뜻한다.
+계단식 상속 로직은 각기 시작점이 다른 여러 규칙을 하나의 요소에 적용할 수 있다는 것을 뜻한다. 여기서 하나의 규칙이 여러개 있을 때는 항상 가장 최근에 적용된 규칙이 우선 적용된다.
+
+Specificity(우선순위) - 더욱 구체적인 선택자에 적용된 규칙이 덜 구체적인 선택자보다 우선한다. 여기서 더 구체적이란, 특정 요소 하나만 선택되는 걸 의미한다.
+
+CSS 박스 모델 - padding, border, margin 설정하기
+
