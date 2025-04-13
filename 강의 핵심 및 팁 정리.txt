@@ -65,7 +65,9 @@ Child(자식 결합자) = h2 > p = Only p which are direct children of h2(직계
 
 box-shadow - x축, y축, 테두리 흐림, 색
 
+list 등에서 border-left 처럼 한쪽만 테두리 지정할 경우 border 크기만큼 텍스트의 시작 위치가 안맞는 경우가 생기는데 이럴 경우 전체 list등에 border값을 지정하고 색상을 transparent로 투명하게 해놓고 원하는 list 항목에만 border-color로 색상을 지정한다. 물론 border-left 등을 다시 정의해줘도 되지만 중복되니까...
 
+strong,em 강한 어조로 읽어 강조의 의미를 전달함 / 톤을 약간 변경하여 강조의 의미를 전달함
 
 
 
