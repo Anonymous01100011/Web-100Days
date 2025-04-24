@@ -89,5 +89,34 @@ favicon generator - 페브아이콘 생성하는 방법 검색어
 
 github clone할때 git clone URL 적고 한칸 띄우고 . 적으면 새 폴더 지정하는게 아니라 현재 폴더에 그대로 복제됨
 
+display: flex; 플렉스박스로 해두고(플렉스박스는 부모-자식 관계에 적용된다)
+flex-direction: row; - row, row-reverse, column, column-reverse 등 여러가지 배치 가능
+크롬 관리자 도구에서 해당 영역에서 flex 누르면 플렉스박스 표시됨
+맨 왼쪽에서 맨 오른쪽까지가 주축, 위에서 아래는 교차축
+reverse로 바꾸면 주축은 오른쪽에서 왼쪽, 교차축은 아래에서 위로 바뀌는 방식이다.
+
+flex-wrap: nowrap; - nowrap, wrap로 설정하고, 정해진 width값이 없다면 창이 줄어들면 알아서 배치가 변함
+
+flex-direction과 flex-wrap 의 기본값은 각각 row, nowrap 이다.
+
+flex-flow: row nowrap; - flex-direction과 flex-wrap를 합친 기능이다.
+
+align-items: center; - 플렉스박스의 요소가 높이가 다를때 원하는 높이로 설정한다.(세로 정렬)
+
+justify-content: flex-start; - flex-start가 기본값, flex-end, center, space-between, space-around, space-evenly 등이 있음. 플렉스박스에서 남는 여유공간을 어디로 배치할지 정하는 기능이다.
+
+background-image: url("");
+background-position: center; - 배경이미지의 가운데로 맞추기
+background-size: cover; - 배경이미지의 사이즈 조절하기, cover는 기본적으로 전체 요소를 덮어주는 것
+
+<포지셔닝 요소>
+position: static; - 포지션 설정, static는 고정, relative는 유동적, absolute는 아예 따로 놀게됨, fixed는 그 위치에 고정됨 즉 뷰포트에 상대적임
+top: 20px; - 위에서 20px만큼 떨어지게 위치시킴, position이 relative일때, top, bottom, right, left 가능, -20px 가능
+
+box-sizing: border-box; - width:100%를 주고 전체 사이즈를 전체 html 요소 사이즈에 맞춤, 기본값은 content-box
+
+
+
+
 
 
