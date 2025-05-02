@@ -143,6 +143,30 @@ nth-of-type() vs nth-child()
 
 grid-column: 1 / 3; - 요소가 grid의 열을 몇개나 차지해야 하는지 설정한다.
 작업관리자에서 grid를 눌렀을때 나오는 grid box에서 나오는 숫자가 해당하는 행과 열의 크기를 나타낸다. 1 / 2 는 1~2까지 차지함, 2 / 3 은 2~3까지 차지함.
+혹은
+grid-column: 1 / span 2; - span은 이 요소가 몇 개의 열을 차지해야 하는가를 나타낸다.
+
+UTF8 - 유니코드 16진수 참조를 위해 &#x 넣어주고, 해당하는 번호(오른쪽 화살표의 경우 2192) 넣어준다.
+
+위치 속성에 대한 추가 정보
+=> https://academind.com/tutorials/the-position-property/
+
+플렉스박스 - 플렉스 컨테이너 
+=> https://academind.com/tutorials/flexbox-basics-container/
+
+플렉스박스 - 플렉스 아이템 
+=> https://academind.com/tutorials/flexbox-flex-items/
+
+플렉스박스와 그리드 비교 
+=> https://academind.com/tutorials/css-grid-vs-flexbox/
+
+article 태그 - 글
+
+font링크 추가시 css링크보다 위에 두는 걸 잊지말자
+
+rgb(or hex) vs hsl vs oklch
+
+
 
 
 
