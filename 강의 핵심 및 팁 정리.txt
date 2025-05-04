@@ -166,6 +166,59 @@ font링크 추가시 css링크보다 위에 두는 걸 잊지말자
 
 rgb(or hex) vs hsl vs oklch
 
+<반응형 디자인 font-size>
+% - 부모 요소의 폰트 사이즈와 관련있다. 종속적 성질이 있다. 따라서 관리가 어렵다.
+em - 다른(상위) 요소의 폰트 사이즈와 관련있다. 종속적 성질이 있다. 따라서 관리가 어렵다. 1em은 100%하고 똑같다.
+rem - 최상위 요소의 폰트 크기와 관련있다. HTML요소이다. 브라우저 설정에서 적용된 폰트 사이즈.
+
+<반응형 디자인 사이즈 심화>
+% - padding에 10%를 주면 부모 요소에 padding값이 없을 경우 너비를 참조한다. 즉, font-size가 아닌 다른 속성에서의 %는 다른 속성을 참조한다.
+em - %와 똑같이 padding에 0.1em을 주면 font-size때 %와 동일했던 것과는 다르게 전혀 다른 결과값이 나온다. 즉, 적용하는 속성이 어떤 것이든 상관없이 항상 font-size 속성을 참조한다. rem도 마찬가지(font-size와 똑같이 em은 부모 요소, rem은 최상위 요소를 참조한다는 것만 다르다.)
+
+border나 border-radius의 경우 px값을 사용하는게 보통 낫다. 동적으로 만들면 종종 원치 않는 결과가 나온다.
+
+<midia queries>
+@media (min-width or max-width: 1200px) {
+    font-size: 2rem;
+}
+Common Breakpoints for Media Queries
+Portrait - Smartphone(480px), Tablet(768px)
+Landscape - Notebook(1024px), Desktop Computer or TV(1200px)
+
+<내부 링크 and 목표 가상 선택자> - 햄버거 버튼 만들기
+internal links - Adds defined ID to URL => href="#id"
+The target selector - Activates CSS rules if defined ID is selected in URL => #id:target
+<햄버거 버튼 코드>
+<a href="" class="menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+</a>
+
+.menu-btn {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-btn span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+z-index - 기본값은 auto 즉, 0이다. z-index는 기본값인 position: static; 를 제외하고 배치된 요소에만 영향을 미친다.
+
+
+
+
+
+
+
+
+
 
 
 
